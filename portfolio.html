@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -29,7 +29,7 @@
           <a class="logo site-nav__logo" href="index.html"
             ><span class="logo--accent">Web</span>Studio</a
           >
-          <ul class="site-nav__list list">
+          <ul class="site-nav__list">
             <li class="site-nav__item">
               <a class="site-nav__link" href="./index.html">Студия</a>
             </li>
@@ -48,7 +48,7 @@
 
         <!-- Контакты в шапке -->
 
-        <ul class="contacts list">
+        <ul class="contacts__list">
           <li class="contacts__item">
             <a class="contacts__link" href="mailto:info@devstudio.com">
               <svg class="contacts__icon" width="16px" height="12px">
@@ -78,7 +78,7 @@
         <div class="container">
           <h1 class="section__title visually-hidden">Портфолио</h1>
           <!-- Кнопки фільтру -->
-          <ul class="filter list">
+          <ul class="filter container__filter">
             <li class="filter__item">
               <button type="button" class="filter__btn filter__btn--active">
                 Все
@@ -100,8 +100,8 @@
 
           <!-- Картки портфоліо -->
 
-          <ul class="portfolio list">
-            <li class="card">
+          <ul class="portfolio">
+            <li class="card portfolio__card">
               <a class="card__link" href="#">
                 <div class="card__overlay">
                   <img
@@ -124,7 +124,7 @@
                 </div></a
               >
             </li>
-            <li class="card">
+            <li class="card portfolio__card">
               <a class="card__link" href="#">
                 <div class="card__overlay">
                   <img
@@ -147,7 +147,7 @@
                 </div></a
               >
             </li>
-            <li class="card">
+            <li class="card portfolio__card">
               <a class="card__link" href="#">
                 <div class="card__overlay">
                   <img
@@ -170,7 +170,7 @@
                 </div></a
               >
             </li>
-            <li class="card">
+            <li class="card portfolio__card">
               <a class="card__link" href="#">
                 <div class="card__overlay">
                   <img
@@ -193,7 +193,7 @@
                 </div></a
               >
             </li>
-            <li class="card">
+            <li class="card portfolio__card">
               <a class="card__link" href="#">
                 <div class="card__overlay">
                   <img
@@ -216,7 +216,7 @@
                 </div></a
               >
             </li>
-            <li class="card">
+            <li class="card portfolio__card">
               <a class="card__link" href="#">
                 <div class="card__overlay">
                   <img
@@ -239,7 +239,7 @@
                 </div></a
               >
             </li>
-            <li class="card">
+            <li class="card portfolio__card">
               <a class="card__link" href="#">
                 <div class="card__overlay">
                   <img
@@ -262,7 +262,7 @@
                 </div></a
               >
             </li>
-            <li class="card">
+            <li class="card portfolio__card">
               <a class="card__link" href="#">
                 <div class="card__overlay">
                   <img
@@ -285,7 +285,7 @@
                 </div></a
               >
             </li>
-            <li class="card">
+            <li class="card portfolio__card">
               <a class="card__link" href="#">
                 <div class="card__overlay">
                   <img
@@ -324,7 +324,7 @@
             ><span class="logo--accent">Web</span>Studio</a
           >
           <address class="address">
-            <ul class="address__list list">
+            <ul class="address__list">
               <li class="address__item">
                 <a
                   class="address__link address__map"
@@ -350,9 +350,9 @@
 
         <!-- Footer Socials -->
 
-        <div class="socials">
+        <div class="socials footer__socials">
           <p class="socials__appeal">Присоединяйтесь</p>
-          <ul class="socials__list list">
+          <ul class="socials__list">
             <li class="socials__item">
               <a class="socials__link" href="#" aria-label="Instagram">
                 <svg class="socials__icon" width="20px" height="20px">
@@ -381,7 +381,7 @@
           </ul>
         </div>
         <!-- Footer Subscribe form -->
-        <div class="subscribe">
+        <div class="subscribe footer__subscribe">
           <form class="form" autocomplete="off">
             <label class="form__label" for="user-email"
               >Подпишитесь на рассылку</label
@@ -394,7 +394,7 @@
                 id="user-email"
                 placeholder="E-mail"
               />
-              <button class="btn-subscribe" type="submit">
+              <button class="btn-subscribe form__btn-subscribe" type="submit">
                 Подписаться
                 <svg class="btn-subscribe__icon" width="24px" height="24px">
                   <use href="./images/icons.svg#icon-form-send"></use>
