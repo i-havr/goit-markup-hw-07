@@ -1,37 +1,33 @@
-// COMMON UTILS
+// BASE AND UTILS
 @import "./utils/variables";
-@import "./base/base";
-@import "./utils/hidden";
-@import "./utils/mixins";
 @import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./utils/hidden";
+@import "./base/common";
+@import "./base/reset";
 
-// COMMON ELEMENTS
+// COMPONENTS
+@import "./components/sections";
+@import "./components/containers";
+@import "./components/titles";
 @import "./components/button";
-
-// HEADER
-@import "./components/header-section";
 @import "./components/site-navigation";
 @import "./components/logo";
 @import "./components/header-contacts";
-
-// HERO + MODAL WINDOW
-@import "./components/hero-section";
 @import "./components/modal-window";
 @import "./components/modal-form";
 @import "./components/modal-checkbox";
-
-// OTHER SECTIONS
-@import "./components/benefits-section";
-@import "./components/about-section";
-@import "./components/team-section";
-@import "./components/clients-section";
-
-// FOOTER
-@import "./components/footer-section";
 @import "./components/footer-address";
 @import "./components/footer-socials";
 @import "./components/footer-subscribe-form";
-
-// PORTFOLIO PAGE
 @import "./components/portfolio-filter";
-@import "./components/portfolio-gallery";
+
+// LAYOUTS
+@import "./layout/header-section";
+@import "./layout/hero-section";
+@import "./layout/benefits-section";
+@import "./layout/about-section";
+@import "./layout/team-section";
+@import "./layout/clients-section";
+@import "./layout/portfolio-gallery";
+@import "./layout/footer-section";
